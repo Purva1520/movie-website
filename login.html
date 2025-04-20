@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | MovieZone</title>
+  <link rel="stylesheet" href="stylelogin.css">
 </head>
 <body>
-    <form onsubmit = "login(event)">
-        <label>
-            "Username: "
-            <input type = "text" id = "username" required>
-        </label>
-        <label>
-            "Password: "
-            <input type = "password" id = "password" required>
-        </label>
-        <button type = "Submit">Login</button>
+  <div class="login-container">
+    <h2>Welcome to MovieZone 🍿</h2>
+    <form action="login.php" method="POST">
+      <input type="text" name="username" placeholder="Username or Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
     </form>
+  </div>
 </body>
 </html>
